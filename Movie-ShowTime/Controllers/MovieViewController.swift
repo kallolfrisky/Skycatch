@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MovieViewController.swift
 //  Movie-ShowTime
 //
 //  Created by Najmul Hasan on 12/25/17.
@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class ViewController: UIViewController {
+class MovieViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -82,7 +82,7 @@ class ViewController: UIViewController {
 
 // MARK: UITableViewDataSource
 
-extension ViewController: UITableViewDataSource {
+extension MovieViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return movieList.count
     }
@@ -103,7 +103,7 @@ extension ViewController: UITableViewDataSource {
 
 // MARK: UITableViewDelegate
 
-extension ViewController: UITableViewDelegate {
+extension MovieViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 74.0
     }

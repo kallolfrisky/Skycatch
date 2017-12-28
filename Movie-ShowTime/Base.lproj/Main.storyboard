@@ -29,7 +29,7 @@
         <!--Skycatch-->
         <scene sceneID="AMl-HT-0nN">
             <objects>
-                <viewController id="2lj-BZ-DV4" customClass="ViewController" customModule="Movie_ShowTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2lj-BZ-DV4" customClass="MovieViewController" customModule="Movie_ShowTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="61c-UL-pet">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
