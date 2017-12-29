@@ -1,5 +1,5 @@
 //
-//  Movie.swift
+//  MMovie.swift
 //  Movie-ShowTime
 //
 //  Created by Najmul Hasan on 12/25/17.
@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct Movie {
+struct MovieModel {
     
+    public var sid: Int
     public var createdDate: Int
     public var updatedDate: Int
     public var title: String
@@ -27,6 +28,7 @@ struct Movie {
     
     public init(jsonData: [AnyObject]){
         
+        sid = jsonData[0] as! Int
         createdDate = jsonData[3] as! Int
         updatedDate = jsonData[5] as! Int
         title = jsonData[8] as? String ?? " "

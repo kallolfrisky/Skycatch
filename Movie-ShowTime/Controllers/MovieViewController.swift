@@ -14,7 +14,6 @@ class MovieViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var movieList = [Movie]()
-    let mainUrl = "https://data.sfgov.org/api/views/yitu-d5am/rows.json"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,10 +24,9 @@ class MovieViewController: UIViewController {
     //Fetch data by service call using DataTask operation, we could make it from a seperate object, here its simple enough
     func fetchData(){
         
-        let remoteService = RemoteService()
-        remoteService.fetchItems(from: URL.init(string: mainUrl)!) { movies in
+        Synchronizer().sync { movies in
             
-            self.movieList = movies 
+            self.movieList = movies
             
             //Switch to main thread and update table view
             DispatchQueue.main.async {
@@ -44,7 +42,7 @@ class MovieViewController: UIViewController {
         
         let cancelActionButton = UIAlertAction(title: "By Movie Name", style: .default) { _ in
             
-            self.movieList.sort(by: {$0.title < $1.title})
+            self.movieList.sort(by: {$0.title! < $1.title!})
             self.tableView.reloadData()
         }
         actionSheet.addAction(cancelActionButton)

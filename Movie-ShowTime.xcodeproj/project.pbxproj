@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F1244A41FF5B85E00F587E4 /* LocalService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1244A31FF5B85E00F587E4 /* LocalService.swift */; };
+		9F1244AB1FF5DBED00F587E4 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1244A91FF5DBED00F587E4 /* Movie+CoreDataClass.swift */; };
+		9F1244AC1FF5DBED00F587E4 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F1244AA1FF5DBED00F587E4 /* Movie+CoreDataProperties.swift */; };
 		9F2096A21FF1A4DE00781DD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096A11FF1A4DE00781DD1 /* AppDelegate.swift */; };
 		9F2096A41FF1A4DE00781DD1 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096A31FF1A4DE00781DD1 /* MovieViewController.swift */; };
 		9F2096A71FF1A4DE00781DD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2096A51FF1A4DE00781DD1 /* Main.storyboard */; };
@@ -17,9 +20,11 @@
 		9F2096C51FF1A4DE00781DD1 /* Movie_ShowTimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096C41FF1A4DE00781DD1 /* Movie_ShowTimeUITests.swift */; };
 		9F2096D81FF234DD00781DD1 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096D71FF234DD00781DD1 /* MovieCell.swift */; };
 		9F2096DA1FF234E800781DD1 /* DataOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096D91FF234E800781DD1 /* DataOrganizer.swift */; };
-		9F2096DC1FF2350300781DD1 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096DB1FF2350300781DD1 /* Movie.swift */; };
+		9F2096DC1FF2350300781DD1 /* MovieModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096DB1FF2350300781DD1 /* MovieModel.swift */; };
 		9F2096E21FF241A300781DD1 /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096E11FF241A300781DD1 /* RemoteService.swift */; };
 		9F2096E71FF39D6D00781DD1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096E61FF39D6D00781DD1 /* MapViewController.swift */; };
+		9F2096FC1FF58AC600781DD1 /* Synchronizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2096FB1FF58AC600781DD1 /* Synchronizer.swift */; };
+		9F20970C1FF5A9DF00781DD1 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F20970B1FF5A9DF00781DD1 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9F1244A31FF5B85E00F587E4 /* LocalService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalService.swift; sourceTree = "<group>"; };
+		9F1244A91FF5DBED00F587E4 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9F1244AA1FF5DBED00F587E4 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9F20969E1FF1A4DE00781DD1 /* Movie-ShowTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Movie-ShowTime.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2096A11FF1A4DE00781DD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F2096A31FF1A4DE00781DD1 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
@@ -56,9 +64,11 @@
 		9F2096C61FF1A4DE00781DD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F2096D71FF234DD00781DD1 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		9F2096D91FF234E800781DD1 /* DataOrganizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataOrganizer.swift; sourceTree = "<group>"; };
-		9F2096DB1FF2350300781DD1 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		9F2096DB1FF2350300781DD1 /* MovieModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieModel.swift; sourceTree = "<group>"; };
 		9F2096E11FF241A300781DD1 /* RemoteService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteService.swift; sourceTree = "<group>"; };
 		9F2096E61FF39D6D00781DD1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		9F2096FB1FF58AC600781DD1 /* Synchronizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synchronizer.swift; sourceTree = "<group>"; };
+		9F20970B1FF5A9DF00781DD1 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,7 @@
 			children = (
 				9F2096A11FF1A4DE00781DD1 /* AppDelegate.swift */,
 				9F2096A51FF1A4DE00781DD1 /* Main.storyboard */,
+				9F2096EB1FF5810800781DD1 /* CoreData */,
 				9F2096DD1FF23B3A00781DD1 /* Services */,
 				9F2096D61FF234B500781DD1 /* Utils */,
 				9F2096D41FF2312500781DD1 /* Models */,
@@ -120,7 +131,6 @@
 				9F2096AB1FF1A4DE00781DD1 /* Assets.xcassets */,
 				9F2096AD1FF1A4DE00781DD1 /* LaunchScreen.storyboard */,
 				9F2096B01FF1A4DE00781DD1 /* Info.plist */,
-				9F2096A81FF1A4DE00781DD1 /* Movie_ShowTime.xcdatamodeld */,
 			);
 			path = "Movie-ShowTime";
 			sourceTree = "<group>";
@@ -163,7 +173,7 @@
 		9F2096D41FF2312500781DD1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				9F2096DB1FF2350300781DD1 /* Movie.swift */,
+				9F2096DB1FF2350300781DD1 /* MovieModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				9F2096E11FF241A300781DD1 /* RemoteService.swift */,
+				9F1244A31FF5B85E00F587E4 /* LocalService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -189,6 +200,18 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9F2096EB1FF5810800781DD1 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9F1244A91FF5DBED00F587E4 /* Movie+CoreDataClass.swift */,
+				9F1244AA1FF5DBED00F587E4 /* Movie+CoreDataProperties.swift */,
+				9F2096FB1FF58AC600781DD1 /* Synchronizer.swift */,
+				9F20970B1FF5A9DF00781DD1 /* CoreDataStack.swift */,
+				9F2096A81FF1A4DE00781DD1 /* Movie_ShowTime.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,14 +348,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1244A41FF5B85E00F587E4 /* LocalService.swift in Sources */,
 				9F2096D81FF234DD00781DD1 /* MovieCell.swift in Sources */,
 				9F2096DA1FF234E800781DD1 /* DataOrganizer.swift in Sources */,
+				9F20970C1FF5A9DF00781DD1 /* CoreDataStack.swift in Sources */,
+				9F1244AB1FF5DBED00F587E4 /* Movie+CoreDataClass.swift in Sources */,
 				9F2096AA1FF1A4DE00781DD1 /* Movie_ShowTime.xcdatamodeld in Sources */,
 				9F2096A41FF1A4DE00781DD1 /* MovieViewController.swift in Sources */,
 				9F2096E21FF241A300781DD1 /* RemoteService.swift in Sources */,
-				9F2096DC1FF2350300781DD1 /* Movie.swift in Sources */,
+				9F2096DC1FF2350300781DD1 /* MovieModel.swift in Sources */,
 				9F2096A21FF1A4DE00781DD1 /* AppDelegate.swift in Sources */,
 				9F2096E71FF39D6D00781DD1 /* MapViewController.swift in Sources */,
+				9F1244AC1FF5DBED00F587E4 /* Movie+CoreDataProperties.swift in Sources */,
+				9F2096FC1FF58AC600781DD1 /* Synchronizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
